@@ -78,6 +78,14 @@ async function startApp() {
 
 
 
+[기능 설명]
+
+* dbConfig(jsonFile) : 프로젝트에 연결 할 DB 정보를 불러온다. (json 파일 생성 방식은 상단의 dbConfig.json 참고)
+* getSQLFile(jsonFile) : 프로젝트에서 사용 할 SQL 목록들을 불러온다. (json 파일 생성 방식은 상단의 sql.json 참고)
+* query(queryString) : SQL 쿼리 동작
+
+
+
 [모듈 빌드 방법]
 
 ```bash
