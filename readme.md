@@ -1,10 +1,6 @@
 <h1>Mysql Improve</h1>
 Node.js용 MySQL 모듈 사용 간편화(Connection Pool 전용)
 
-[필수 항목]
-
-* Node.js v12 above
-
 
 
 [사용 방법]
