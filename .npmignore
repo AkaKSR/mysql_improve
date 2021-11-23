@@ -29,5 +29,4 @@ pnpm-debug.log*
 
 
 # Local JSON
-dbConfig.json
-sql.json
+*.json

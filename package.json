@@ -1,0 +1,36 @@
+{
+  "name": "mysql_improve",
+  "version": "0.1.2",
+  "description": "Node.js MySQL Module (Connection Pool Only)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./config/build.js"
+  },
+  "author": {
+    "email": "akaikarus@gmail.com",
+    "name": "Harry Kim"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  },
+  "keywords": [
+    "mysql",
+    "maria",
+    "mariadb"
+  ],
+  "homepage": "https://github.com/AkaKSR/mysql_improve",
+  "bugs": {
+    "url": "https://github.com/AkaKSR/mysql_improve/issues",
+    "email": "akaikarus@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkaKSR/mysql_improve.git"
+  },
+  "engines": {
+    "node": ">= 0.6"
+  }
+}
