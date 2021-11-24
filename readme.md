@@ -3,11 +3,13 @@ Node.js용 MySQL 모듈 사용 간편화(Connection Pool 전용)
 
 
 
+
+
 [사용 방법]
 
-* mysql_improve 모듈 폴더를 복사하여 프로젝트에 붙여넣는다.
-* DB 설정파일(dbConfig.json)과 SQL 파일(sql.json)을 작성하여 프로젝트 내부에 위치 시킨다.
-* 아래의 JavaScript 항목의 코드를 참고하여 모듈 사용
+```bash
+npm install --save mysql_improve
+```
 
 
 
