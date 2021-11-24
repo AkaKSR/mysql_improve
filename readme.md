@@ -34,7 +34,7 @@ your-project
 
 ```json
 {
-	"connectionLimit": 50,
+    "connectionLimit": 50,
     "host": "Your MySQL Addresss",
     "user": "MySQL User Account",
     "password": "MySQL User Password",
