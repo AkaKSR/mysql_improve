@@ -65,7 +65,7 @@ async function startApp() {
     var sql = mysql.getSQLFile('./config/sql.json'); // sql.json FilePath
     
     // SQL Query Start
-    var result = await mysql.query(sql.getNow); // Return Array()
+    var result = await mysql.query(sql.getNow, true); // Return Array()
     /**
     * [ RowDataPacket { 'NOW()': 2021-11-23T08:11:43.000Z } ]
     */
@@ -76,9 +76,15 @@ async function startApp() {
 
 [기능 설명]
 
-* dbConfig(jsonFile) : 프로젝트에 연결 할 DB 정보를 불러온다. (json 파일 생성 방식은 상단의 dbConfig.json 참고)
-* getSQLFile(jsonFile) : 프로젝트에서 사용 할 SQL 목록들을 불러온다. (json 파일 생성 방식은 상단의 sql.json 참고)
-* query(queryString) : SQL 쿼리 동작
+* dbConfig(jsonFile) : 프로젝트에 연결 할 DB 정보를 불러온다.
+  jsonFile = 해당 json 파일의 경로
+  (json 파일 생성 방식은 상단의 dbConfig.json 참고)
+* getSQLFile(jsonFile) : 프로젝트에서 사용 할 SQL 목록들을 불러온다.
+  jsonFile = 해당 json 파일의 경로
+  (json 파일 생성 방식은 상단의 sql.json 참고)
+* query(queryString, isEnd) : SQL 쿼리 동작
+  queryString = SQL 쿼리문
+  isEnd = 종료 여부(true: 쿼리 실행후 커넥션풀 종료 / false: 쿼리 실행후 커넥션풀 유지)
 
 
 
