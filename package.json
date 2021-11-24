@@ -1,6 +1,6 @@
 {
   "name": "mysql_improve",
-  "version": "0.1.3_1",
+  "version": "0.1.3b",
   "description": "Node.js MySQL Module (Connection Pool Only)",
   "main": "index.js",
   "scripts": {
