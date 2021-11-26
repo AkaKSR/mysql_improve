@@ -63,7 +63,7 @@ async function startApp() {
     // MySQL Connection Settings
     mysql.dbConfig('./config/dbConfig.json'); // dbConfig.json FilePath
     
-    // Read SQL JSON File
+    // Read SQL JSON File (Optional)
     var sql = mysql.getSQLFile('./config/sql.json'); // sql.json FilePath
     
     // SQL Query Start
