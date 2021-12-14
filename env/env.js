@@ -21,4 +21,8 @@ module.exports = {
         dbConfig = JSON.parse(file.toString('utf8'));
         return dbConfig;
     },
+    loadConfigJSON: function (jsonData) {
+        dbConfig = jsonData;
+        return dbConfig;
+    }
 }

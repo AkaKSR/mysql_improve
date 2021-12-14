@@ -5,6 +5,11 @@ exports.dbConfig = function dbConfig(fileName) {
     return mysql;
 }
 
+exports.dbConfigJSON = function dbConfigJSON(jsonData) {
+    mysql.dbConfigJSON(jsonData);
+    return mysql;
+}
+
 exports.getSQLFile = function getSQLFile(sqlJSONFile) {
     return require('./lib/improve/sql').getJSONFile(sqlJSONFile);
 }
@@ -16,4 +21,3 @@ exports.query = async function query(queryString, isEnd) {
     var result = await mysql.query(queryString, isEnd);
     return result;
 }
-
